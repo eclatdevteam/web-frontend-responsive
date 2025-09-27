@@ -109,7 +109,7 @@ const Onboarding = () => {
       </div>
 
       {/* Text + Controls */}
-      <div className="w-full flex items-center justify-center h-[35%]">
+      <div className="w-full flex items-center justify-center h-[30%]">
         <div className="px-4 w-full">
           <motion.h1
             key={details[state].header}
