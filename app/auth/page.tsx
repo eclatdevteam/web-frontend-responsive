@@ -7,7 +7,7 @@ import { motion } from 'framer-motion'
 function Page() {
     const router = useRouter()
     return (
-        <div className='h-screen w-full bg-theme-primary flex flex-col px-4 items-center justify-between pb-10 pt-28'>
+        <div className='h-screen max-h-[100dvh] w-full bg-theme-primary flex flex-col px-4 items-center justify-between pb-10 pt-28'>
             <motion.h1
                 initial={{ y: -100, opacity: 0 }}
                 animate={{ y: 0, opacity: 2 }}
