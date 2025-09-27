@@ -54,7 +54,7 @@ const Onboarding = () => {
   const [loaded, setLoaded] = useState<Record<number, boolean>>({});
 
   // Preload images once
- useEffect(() => {
+  useEffect(() => {
     if (typeof window === "undefined") return;
 
     const preloadImages = async () => {
@@ -80,7 +80,7 @@ const Onboarding = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-between h-[100dvh] overflow-hidden">
+    <div className="flex flex-col items-center justify-between h-[100dvh] overflow-hidden bg-white">
       {/* Skip button */}
       <div
         onClick={() => setState(details.length - 1)}
@@ -91,7 +91,7 @@ const Onboarding = () => {
       </div>
 
       {/* Image slideshow */}
-      <div className="relative w-full min-h-[65%] bg-gradient-to-t from-white/90 to-transparent">
+      <div className="relative w-full min-h-[65%] bg-gradient-to-t from-white/90 to-transparent pb-6">
         <AnimatePresence mode="wait">
           <motion.div
             key={state}
@@ -138,8 +138,8 @@ const Onboarding = () => {
                 key={key}
                 onClick={() => setState(key)}
                 className={`rounded-full h-1.5 cursor-pointer transition-all ${key === state
-                    ? "bg-primary3 w-8"
-                    : "bg-primary-ghost w-5"
+                  ? "bg-primary3 w-8"
+                  : "bg-primary-ghost w-5"
                   }`}
               />
             ))}
