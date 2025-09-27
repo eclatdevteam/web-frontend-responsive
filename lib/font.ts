@@ -1,10 +1,16 @@
-import { Inter, Work_Sans } from 'next/font/google';
+import { Inter, Nunito, Work_Sans } from 'next/font/google';
 
 // Configure Inter
 export const inter = Inter({
   subsets: ['latin'],
   display: 'swap',
   variable: '--font-inter', // Optional: for CSS variable usage
+});
+
+export const nunito = Nunito({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-nunito', // Optional: for CSS variable usage
 });
 
 // Configure Work Sans

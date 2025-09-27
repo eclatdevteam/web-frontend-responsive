@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { inter, workSans } from "@/lib/font";
+import { inter, nunito } from "@/lib/font";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -15,7 +15,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} antialiased`}
+        className={`${inter.className} ${nunito.className} antialiased`}
       >
         {children}
       </body>
