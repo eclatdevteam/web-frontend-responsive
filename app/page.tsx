@@ -91,7 +91,7 @@ const Onboarding = () => {
       </div>
 
       {/* Image slideshow */}
-      <div className="relative w-full min-h-[65%] bg-gradient-to-t from-white/90 to-transparent pb-6">
+      <div className="relative w-full min-h-[70%] bg-gradient-to-t from-white/90 to-transparent pb-6">
         <AnimatePresence mode="wait">
           <motion.div
             key={state}
@@ -109,7 +109,7 @@ const Onboarding = () => {
       </div>
 
       {/* Text + Controls */}
-      <div className="w-full flex items-center justify-center">
+      <div className="w-full flex items-center justify-center h-[35%]">
         <div className="px-4 w-full">
           <motion.h1
             key={details[state].header}
